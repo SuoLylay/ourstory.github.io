@@ -12,7 +12,7 @@
     font-family: header;
     src: url(../font/Anton-Regular.ttf);
 }
-*{padding:0;margin:0;}
+*{padding:0;margin:0;box-sizing: border-box;}
 h2,h4,h6{font-family:header;}
 h3,h1{font-family:hero;color:#fcfcfc;}
 h5{font-family:'Poppins', sans-serif;}
@@ -151,8 +151,9 @@ li{
     width: 100%;
 }
 
-.gallary{height: 300px; }
+.gallary{height: 300px; padding: 10px;}
 .gallary img{width: 100%;height: 100%;object-fit: cover; border-radius: 10px;}
+
 /* //////////////////////////////////// */
 @media only screen and (max-width: 1024px){
     .count-time{
