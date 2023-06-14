@@ -25,6 +25,7 @@ p{font-family:textP;color:#b7b4b4;}
 }
 body{background-color:#16171C!important;}
 .nav-item a{ color: #f53a3a!important;}
+.navbar-main{position: sticky;top: 0;background-color: #16171C;z-index: 99;}
 .mt-6{margin-top:5.5rem}
 .mt-n1{
     margin-top: -0.25rem!important;
