@@ -155,6 +155,70 @@ li{
 .gallary{height: 300px; padding: 10px;}
 .gallary img{width: 100%;height: 100%;object-fit: cover; border-radius: 10px; box-shadow: 0 0 8px 1px rgb(5, 5, 5);}
 .flower{height: 300px; background-image: url("../image/flower.jpg"); background-repeat: no-repeat; background-attachment: fixed; background-position: right;}
+.tangel{animation: vale1 15s infinite; box-shadow: 3px 0 3px 0px rgb(18, 18, 18);overflow:hidden;margin-left: 200px; border-radius: 10px; height: 160px;background-color: red; transform: rotate(45deg);}
+.tangel-big{animation: vale 15s infinite;  box-shadow: 5px 0 6px 0px rgb(18, 18, 18);height: 300px;background-color: rgb(30, 0, 94);transform: rotate(45deg);}
+.tangel img, .tangel-big img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.text-disaphea{
+    color: rgb(0, 0, 0);
+    opacity: 0;
+    animation: vale2 15s infinite;
+}
+
+@keyframes vale{
+    0%{
+       margin-left: 10px;
+        transform: rotate(45deg);
+    }
+    50%{
+        margin-left:100px;
+        transform: rotate(0deg);
+        transform: scale(1.6);
+        opacity: 1;
+    }
+    100%{
+        margin-left:10px;
+        transform: rotate(45deg);
+        .text-disaphea{opacity: 1;}
+        /* transform: scale(0.9); */
+    }
+}
+@keyframes vale1{
+    0%{
+        margin-left: 220px;
+        transform: rotate(45deg);
+        opacity: 100%;
+    }
+    50%{
+        margin-left:100px;
+        transform: rotate(0deg);
+        opacity: 0%;
+    }
+    100%{
+        margin-left: 220px;
+        transform: rotate(45deg);
+        opacity: 100%;
+    }
+}
+@keyframes vale2{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+        margin-left: 50px;
+        color: rgb(255, 255, 255);
+    }
+    100%{
+        opacity: 0;
+        margin-left: 0;
+    }
+}
+
+
 /* //////////////////////////////////// */
 @media only screen and (max-width: 1024px){
     .count-time{
@@ -165,5 +229,19 @@ li{
     }
     #timer{
         font-size: 2rem; 
+    }
+    .tangel{
+        margin-left: 220px;
+        border-radius: 10px;
+        height: 100px;
+        background-color: red; 
+        transform: rotate(45deg);
+    }
+    .tangel-big{
+        border-radius: 10px;
+        height: 200px;
+        background-color: rgb(30, 0, 94);
+        transform: rotate(45deg);
+        margin-left: 50px;
     }
 }
