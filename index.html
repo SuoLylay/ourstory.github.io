@@ -311,15 +311,15 @@
 
         y = years;
         M = months - years * 12;
-        d = days - months * 30 - 5;
+        d = days;
         h = hours - days * 24;
         m = mins - hours * 60;
         s = secs - mins * 60;
         document.getElementById("timer")
             .innerHTML =
             '<div><span> Wednesday, 22 December, 2021</span></div><br>' +
-            '<div>' + y + '<span>Years</span></div>' +
-            '<div>' + M + '<span>Months</span></div>' +
+            // '<div>' + y + '<span>Years</span></div>' +
+            // '<div>' + M + '<span>Months</span></div>' +
             '<div>' + d + '<span>Days</span></div>' +
             '<div>' + h + '<span>Hours</span></div>' +
             '<div>' + m + '<span>Minutes</span></div>' +
